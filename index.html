@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP2 Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/class.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="school-name">École nationale des sciences appliquées FES</div>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Rechercher un cours...">
+        <i class="fas fa-search search-icon"></i>
+    </div>
+
+    <main>
+        <h1>CP2</h1>
+        <div class="semester-container">
+            <div class="semester-card" data-semester="S3">
+                <i class="fas fa-book-open"></i>
+                <h2>Semestre 3</h2>
+            </div>
+            <div class="semester-card" data-semester="S4">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>Semestre 4</h2>
+            </div>
+        </div>
+
+        <div class="courses-container" style="display: none;">
+            <!-- Les cours seront injectés ici dynamiquement -->
+        </div>
+    </main>
+
+    <!-- Modal pour les types de documents -->
+    <div class="modal" id="documentModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Sélectionnez le type de document</h2>
+            <div class="document-types">
+                <button class="doc-type" data-type="cours">
+                    <i class="fas fa-book"></i>
+                    Cours
+                </button>
+                <button class="doc-type" data-type="td">
+                    <i class="fas fa-pencil-alt"></i>
+                    TD
+                </button>
+                <button class="doc-type" data-type="tp">
+                    <i class="fas fa-flask"></i>
+                    TP
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading indicator -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Téléchargement en cours...</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ENSAF -no need to know. Tous droits réservés.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
