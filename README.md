@@ -2,6 +2,7 @@
 
 A simple web-based platform that allows students to **browse and submit courses** for different semesters.  
 The project is built using **HTML, CSS, and JavaScript** and is hosted on **GitHub Pages**.
+Link : https://b212m.github.io/CP2/
 
 ---
 
@@ -40,4 +41,4 @@ For a fully functional version, a backend with **PHP, Node.js, or Python** is ne
 ## 📂 Setup & Usage  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/B212M/CP2.git
+   git clone https://github.com/b1l4l-sec/Cours-TDS-TPs_CP2.git
